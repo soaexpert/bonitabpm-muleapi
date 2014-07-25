@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:proc="http://bip.b.br/process" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://bip.b.br/process/services">
+      <xsd:import namespace="http://bip.b.br/process" schemaLocation="Process_1_0.xsd"/>
+     <xsd:element name="startProcess">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="process"
+							type="proc:ProcessDefinition" />
+						<xsd:element
+							name="variable"
+							type="proc:Variable"
+							minOccurs="0"
+							maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="startProcessResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="processResponse"
+							type="proc:ProcessInstance" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="listProcessDefinitions">
+				<xsd:complexType />
+			</xsd:element>
+			<xsd:element name="listProcessDefinitionsResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="process"
+							type="proc:ProcessDefinition"
+							minOccurs="0"
+							maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="findTasks">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="processInstance"
+							type="proc:ProcessInstance" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="findTasksResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="task"
+							type="proc:Task"
+							minOccurs="0"
+							maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="startTask">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="task"
+							type="proc:Task" />
+						<xsd:element
+							name="user"
+							type="proc:User" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="startTaskResponse">
+				<xsd:complexType />
+			</xsd:element>
+			<xsd:element name="completeTask">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="task"
+							type="proc:Task" />
+						<xsd:element
+							name="variable"
+							type="proc:Variable"
+							minOccurs="0"
+							maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="completeTaskResponse">
+				<xsd:complexType />
+			</xsd:element>
+			<xsd:element name="findUsers">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="exampleUser"
+							type="proc:User" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="findUsersResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="user"
+							type="proc:User"
+							minOccurs="0"
+							maxOccurs="unbounded" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="findProcessInstances">
+				<xsd:complexType />
+			</xsd:element>
+			<xsd:element name="findProcessInstancesResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="processInstances"
+							type="proc:ProcessInstance"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="listVariables">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="processInstance"
+							type="proc:ProcessInstance">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="listVariablesResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element
+							name="variables"
+							type="proc:Variable"
+							minOccurs="0"
+							maxOccurs="unbounded">
+						</xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+    </xsd:schema>

@@ -1,0 +1,16 @@
+[
+    {
+        "case_id": "1008",
+        "name": "var1",
+        "description": "",
+        "type": "java.lang.String",
+        "value": "Teste"
+    },
+    {
+        "case_id": "1008",
+        "name": "var2",
+        "description": "",
+        "type": "java.lang.Integer",
+        "value": "1234"
+    }
+]

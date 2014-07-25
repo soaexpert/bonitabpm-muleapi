@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Alexandre" created="Fri Jun 27 17:22:41 BRT 2014" description="JSON To XML" guiVersion="3.4.3.P" id="1403905438635" licenseCode="Unlicensed" licenseType="Unknown" modified="Fri Jun 27 17:22:41 BRT 2014" modifiedBy="Alexandre" name="JSON_To_XML_1JSON_To_XML_2JSON_To_XML_3JSON_To_XML_4JSON_To_XML_5" preview-file="${Project_Home}/src/test/resources/listVariablesResp.json" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/array" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="41b945b1-7ddc-4f74-ab6c-e5a622207209">
+<Record fieldDelimiter="," name="array" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" label="__id" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/array/case_x005fid" containerType="SINGLE" label="case_id" name="case_id" type="string"/>
+<Field __index="1" __sourcePath="{}/array/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="2" __sourcePath="{}/array/description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="3" __sourcePath="{}/array/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="4" __sourcePath="{}/array/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="0" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:listVariablesResponse" _dataStructure="OBJECT" _id="__id" _type="Output" id="6912eae4-c25d-4e6a-891e-2504b8fafb4f">
+<Record fieldDelimiter="," name="listVariablesResponse" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:listVariablesResponse/ns0:variables" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="6912eae4-c25d-4e6a-891e-2504b8fafb4f" _parent_id="__parent_id" _type="Output" id="ca6ff4b9-5b94-4fd8-a04a-4546585a754a">
+<Record fieldDelimiter="," name="variables" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:listVariablesResponse/ns0:variables/ns1:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="1" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:listVariablesResponse/ns0:variables/ns1:value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER" xmlSchemaURL=".\src\main\resources\ProcessManagement_1_0.xsd">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:element clover:name="ns0:listVariablesResponse" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" xmlns:ns0="http://bip.b.br/process/services">
+  <clover:element clover:name="ns0:variables" clover:inPort="0">
+    <clover:element clover:name="ns1:name" xmlns:ns1="http://bip.b.br/process">$0.name</clover:element>
+    <clover:element clover:name="ns1:value" xmlns:ns1="http://bip.b.br/process">$0.value</clover:element>
+  </clover:element>
+</clover:element>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://bip.b.br/process/services}listVariablesResponse]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'array' -&gt; 'ns0:variables'" guiX="460" guiY="20" id="FOREACH_ARRAY_NS0_VARIABLES" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__id;
+//END -> DO NOT REMOVE
+output.name = input.name;
+output.value = input.value;
+]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="JSON READER" guiX="20" guiY="20" id="JSON_READER0" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context xpath="/root">
+  <Context outPort="0" sequenceField="__id" xpath="array">
+    <Mapping cloverField="case_id" trim="true" xpath="case_x005fid"/>
+    <Mapping cloverField="name" trim="true" xpath="name"/>
+    <Mapping cloverField="description" trim="true" xpath="description"/>
+    <Mapping cloverField="type" trim="true" xpath="type"/>
+    <Mapping cloverField="value" trim="true" xpath="value"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+<attr name="jsonSchemaURL"><![CDATA[.\src\test\resources\listVariablesResp.json]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_ARRAY_NS0_VARIABLES:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="ca6ff4b9-5b94-4fd8-a04a-4546585a754a" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="41b945b1-7ddc-4f74-ab6c-e5a622207209" outPort="Port 0 (out)" toNode="FOREACH_ARRAY_NS0_VARIABLES:0"/>
+</Phase>
+</Graph>

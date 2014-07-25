@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://bip.b.br/process"
+	xmlns:tns="http://bip.b.br/process" elementFormDefault="qualified"
+	version="1.0">
+
+
+	<complexType name="ProcessDefinition">
+		<sequence>
+			<element name="displayDescription" type="string" minOccurs="0" />
+			<element name="displayName" type="string" minOccurs="0" />
+			<element name="icon" type="string" minOccurs="0" />
+			<element name="description" type="string" minOccurs="0" />
+			<element name="deployedBy" type="string" minOccurs="0" />
+			<element name="activationState" type="string" minOccurs="0" />
+			<element name="version" type="string" minOccurs="0" />
+			<element name="deploymentDate" type="dateTime" minOccurs="0" />
+			<element name="name" type="string" minOccurs="0" />
+			<element name="id" type="string" minOccurs="0" />
+			<element name="configurationState" type="string" minOccurs="0" />
+			<element name="lastUpdateDate" type="dateTime" minOccurs="0" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="ProcessInstance">
+		<sequence>
+			<element name="endDate" type="dateTime" minOccurs="0" />
+			<element name="processDefinitionId" type="string" minOccurs="0" />
+			<element name="start" type="dateTime" minOccurs="0" />
+			<element name="rootCaseId" type="string" minOccurs="0" />
+			<element name="id" type="string" minOccurs="0" />
+			<element name="state" type="string" minOccurs="0" />
+			<element name="startedBy" type="string" minOccurs="0" />
+			<element name="lastUpdateDate" type="dateTime" minOccurs="0" />
+			<element name="startedBySubstitute" type="string" minOccurs="0" />
+		</sequence>
+	</complexType>
+	
+
+	<complexType name="Task">
+		<sequence>
+
+			<element name="displayDescription" type="string" minOccurs="0" />
+			<element name="executedBy" type="string" minOccurs="0" />
+			<element name="rootContainerId" type="string" minOccurs="0" />
+			<element name="assignedDate" type="dateTime" minOccurs="0" />
+			<element name="displayName" type="string" minOccurs="0" />
+			<element name="executedBySubstitute" type="string" minOccurs="0" />
+			<element name="dueDate" type="dateTime" minOccurs="0" />
+			<element name="description" type="string" minOccurs="0" />
+			<element name="type" type="string" minOccurs="0" />
+			<element name="priority" type="string" minOccurs="0" />
+			<element name="actorId" type="string" minOccurs="0" />
+			<element name="processId" type="string" minOccurs="0" />
+			<element name="caseId" type="string" minOccurs="0" />
+			<element name="name" type="string" minOccurs="0" />
+			<element name="reachedStateDate" type="dateTime" minOccurs="0" />
+			<element name="id" type="string" minOccurs="0" />
+			<element name="state" type="string" minOccurs="0" />
+			<element name="lastUpdateDate" type="dateTime" minOccurs="0" />
+			<element name="assignedId" type="string" minOccurs="0" />
+		</sequence>
+
+	</complexType>
+	
+	<complexType name="User">
+		<sequence>
+			<element name="firstName" type="string" minOccurs="0" />
+			<element name="creationDate" type="dateTime" minOccurs="0" />
+			<element name="userName" type="string" minOccurs="0" />
+			<element name="title" type="string" minOccurs="0" />
+			<element name="createdByUser" type="string" minOccurs="0" />
+			<element name="enabled" type="boolean" minOccurs="0" />
+			<element name="lastName" type="string" minOccurs="0" />
+			<element name="lastConnection" type="dateTime" minOccurs="0" />
+			<element name="password" type="string" minOccurs="0" />
+			<element name="passwordConfirm" type="string" minOccurs="0" />
+			<element name="managerId" type="string" minOccurs="0" />
+			<element name="id" type="string" minOccurs="0" />
+			<element name="jobTitle" type="string" minOccurs="0" />
+			<element name="lastUpdateDate" type="dateTime" minOccurs="0" />
+		</sequence>
+	
+	</complexType>
+	
+	<complexType name="Variable">
+		<sequence>
+			<element name="name" minOccurs="0" type="string" />
+			<element name="value" minOccurs="0" type="string" />
+		</sequence>
+	</complexType>
+
+
+</schema>

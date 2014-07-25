@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Alexandre" created="Fri Jun 27 11:16:17 BRT 2014" description="JSON To XML" guiVersion="3.4.3.P" id="1403882521839" licenseCode="Unlicensed" licenseType="Unknown" modified="Fri Jun 27 11:16:17 BRT 2014" modifiedBy="Alexandre" name="JSON_To_XML_1" preview-file="${Project_Home}/src/test/resources/findTasksResp.json" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/array" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _type="Input" id="bbe050ca-376b-47fe-9724-de28f7c57e8b">
+<Record fieldDelimiter="," name="array" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" label="__id" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/array/displayDescription" containerType="SINGLE" label="displayDescription" name="displayDescription" type="string"/>
+<Field __index="1" __sourcePath="{}/array/executedBy" containerType="SINGLE" label="executedBy" name="executedBy" type="string"/>
+<Field __index="2" __sourcePath="{}/array/rootContainerId" containerType="SINGLE" label="rootContainerId" name="rootContainerId" type="string"/>
+<Field __index="3" __sourcePath="{}/array/assigned_x005fdate" containerType="SINGLE" label="assigned_date" name="assigned_date" type="string"/>
+<Field __index="4" __sourcePath="{}/array/displayName" containerType="SINGLE" label="displayName" name="displayName" type="string"/>
+<Field __index="5" __sourcePath="{}/array/executedBySubstitute" containerType="SINGLE" label="executedBySubstitute" name="executedBySubstitute" type="string"/>
+<Field __index="6" __sourcePath="{}/array/dueDate" containerType="SINGLE" label="dueDate" name="dueDate" type="string"/>
+<Field __index="7" __sourcePath="{}/array/description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="8" __sourcePath="{}/array/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="9" __sourcePath="{}/array/priority" containerType="SINGLE" label="priority" name="priority" type="string"/>
+<Field __index="10" __sourcePath="{}/array/actorId" containerType="SINGLE" label="actorId" name="actorId" type="string"/>
+<Field __index="11" __sourcePath="{}/array/processId" containerType="SINGLE" label="processId" name="processId" type="string"/>
+<Field __index="12" __sourcePath="{}/array/caseId" containerType="SINGLE" label="caseId" name="caseId" type="string"/>
+<Field __index="13" __sourcePath="{}/array/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="14" __sourcePath="{}/array/reached_x005fstate_x005fdate" containerType="SINGLE" label="reached_state_date" name="reached_state_date" type="string"/>
+<Field __index="15" __sourcePath="{}/array/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="16" __sourcePath="{}/array/state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __index="17" __sourcePath="{}/array/last_x005fupdate_x005fdate" containerType="SINGLE" label="last_update_date" name="last_update_date" type="string"/>
+<Field __index="18" __sourcePath="{}/array/assigned_x005fid" containerType="SINGLE" label="assigned_id" name="assigned_id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="0" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:findTasksResponse" _dataStructure="OBJECT" _id="__id" _type="Output" id="29e32b0e-eb46-485f-8b97-4ab0c882766b">
+<Record fieldDelimiter="," name="findTasksResponse" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="29e32b0e-eb46-485f-8b97-4ab0c882766b" _parent_id="__parent_id" _type="Output" id="03c93c8e-64ca-492b-845a-cd609c96ac36">
+<Record fieldDelimiter="," name="task" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:displayDescription" containerType="SINGLE" label="displayDescription" name="displayDescription" type="string"/>
+<Field __index="1" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:executedBy" containerType="SINGLE" label="executedBy" name="executedBy" type="string"/>
+<Field __index="2" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:rootContainerId" containerType="SINGLE" label="rootContainerId" name="rootContainerId" type="string"/>
+<Field __dmType="Calendar" __index="3" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:assignedDate" containerType="SINGLE" label="assignedDate" name="assignedDate" type="string"/>
+<Field __index="4" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:displayName" containerType="SINGLE" label="displayName" name="displayName" type="string"/>
+<Field __index="5" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:executedBySubstitute" containerType="SINGLE" label="executedBySubstitute" name="executedBySubstitute" type="string"/>
+<Field __dmType="Calendar" __index="6" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:dueDate" containerType="SINGLE" label="dueDate" name="dueDate" type="string"/>
+<Field __index="7" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="8" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="9" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:priority" containerType="SINGLE" label="priority" name="priority" type="string"/>
+<Field __index="10" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:actorId" containerType="SINGLE" label="actorId" name="actorId" type="string"/>
+<Field __index="11" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:processId" containerType="SINGLE" label="processId" name="processId" type="string"/>
+<Field __index="12" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:caseId" containerType="SINGLE" label="caseId" name="caseId" type="string"/>
+<Field __index="13" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __dmType="Calendar" __index="14" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:reachedStateDate" containerType="SINGLE" label="reachedStateDate" name="reachedStateDate" type="string"/>
+<Field __index="15" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="16" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __dmType="Calendar" __index="17" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:lastUpdateDate" containerType="SINGLE" label="lastUpdateDate" name="lastUpdateDate" type="string"/>
+<Field __index="18" __schemaType="{http://bip.b.br/process}Task" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:findTasksResponse/ns0:task/ns1:assignedId" containerType="SINGLE" label="assignedId" name="assignedId" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER" xmlSchemaURL=".\src\main\resources\ProcessManagement_1_0.xsd">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:element clover:name="ns0:findTasksResponse" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" xmlns:ns0="http://bip.b.br/process/services">
+  <clover:element clover:name="ns0:task" clover:inPort="0">
+    <clover:element clover:name="ns1:displayDescription" xmlns:ns1="http://bip.b.br/process">$0.displayDescription</clover:element>
+    <clover:element clover:name="ns1:executedBy" xmlns:ns1="http://bip.b.br/process">$0.executedBy</clover:element>
+    <clover:element clover:name="ns1:rootContainerId" xmlns:ns1="http://bip.b.br/process">$0.rootContainerId</clover:element>
+    <clover:element clover:name="ns1:assignedDate" xmlns:ns1="http://bip.b.br/process">$0.assignedDate</clover:element>
+    <clover:element clover:name="ns1:displayName" xmlns:ns1="http://bip.b.br/process">$0.displayName</clover:element>
+    <clover:element clover:name="ns1:executedBySubstitute" xmlns:ns1="http://bip.b.br/process">$0.executedBySubstitute</clover:element>
+    <clover:element clover:name="ns1:dueDate" xmlns:ns1="http://bip.b.br/process">$0.dueDate</clover:element>
+    <clover:element clover:name="ns1:description" xmlns:ns1="http://bip.b.br/process">$0.description</clover:element>
+    <clover:element clover:name="ns1:type" xmlns:ns1="http://bip.b.br/process">$0.type</clover:element>
+    <clover:element clover:name="ns1:priority" xmlns:ns1="http://bip.b.br/process">$0.priority</clover:element>
+    <clover:element clover:name="ns1:actorId" xmlns:ns1="http://bip.b.br/process">$0.actorId</clover:element>
+    <clover:element clover:name="ns1:processId" xmlns:ns1="http://bip.b.br/process">$0.processId</clover:element>
+    <clover:element clover:name="ns1:caseId" xmlns:ns1="http://bip.b.br/process">$0.caseId</clover:element>
+    <clover:element clover:name="ns1:name" xmlns:ns1="http://bip.b.br/process">$0.name</clover:element>
+    <clover:element clover:name="ns1:reachedStateDate" xmlns:ns1="http://bip.b.br/process">$0.reachedStateDate</clover:element>
+    <clover:element clover:name="ns1:id" xmlns:ns1="http://bip.b.br/process">$0.id</clover:element>
+    <clover:element clover:name="ns1:state" xmlns:ns1="http://bip.b.br/process">$0.state</clover:element>
+    <clover:element clover:name="ns1:lastUpdateDate" xmlns:ns1="http://bip.b.br/process">$0.lastUpdateDate</clover:element>
+    <clover:element clover:name="ns1:assignedId" xmlns:ns1="http://bip.b.br/process">$0.assignedId</clover:element>
+  </clover:element>
+</clover:element>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://bip.b.br/process/services}findTasksResponse]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'array' -&gt; 'ns0:task'" guiX="460" guiY="20" id="FOREACH_ARRAY_NS0_TASK" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__id;
+//END -> DO NOT REMOVE
+output.displayDescription = input.displayDescription;
+output.executedBy = input.executedBy;
+output.rootContainerId = input.rootContainerId;
+output.displayName = input.displayName;
+output.executedBySubstitute = input.executedBySubstitute;
+output.dueDate = (isnull(input.dueDate) ? null : str2calendar(input.dueDate,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.description = input.description;
+output.type = input.type;
+output.priority = input.priority;
+output.actorId = input.actorId;
+output.processId = input.processId;
+output.caseId = input.caseId;
+output.name = input.name;
+output.id = input.id;
+output.state = input.state;
+output.assignedDate = (isnull(input.assigned_date) ? null : str2calendar(input.assigned_date,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.reachedStateDate = (isnull(input.reached_state_date) ? null : str2calendar(input.reached_state_date,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.lastUpdateDate = (isnull(input.last_update_date) ? null : str2calendar(input.last_update_date,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.assignedId = input.assigned_id;]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="JSON READER" guiX="20" guiY="20" id="JSON_READER0" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context xpath="/root">
+  <Context outPort="0" sequenceField="__id" xpath="array">
+    <Mapping cloverField="displayDescription" trim="true" xpath="displayDescription"/>
+    <Mapping cloverField="executedBy" trim="true" xpath="executedBy"/>
+    <Mapping cloverField="rootContainerId" trim="true" xpath="rootContainerId"/>
+    <Mapping cloverField="assigned_date" trim="true" xpath="assigned_x005fdate"/>
+    <Mapping cloverField="displayName" trim="true" xpath="displayName"/>
+    <Mapping cloverField="executedBySubstitute" trim="true" xpath="executedBySubstitute"/>
+    <Mapping cloverField="dueDate" trim="true" xpath="dueDate"/>
+    <Mapping cloverField="description" trim="true" xpath="description"/>
+    <Mapping cloverField="type" trim="true" xpath="type"/>
+    <Mapping cloverField="priority" trim="true" xpath="priority"/>
+    <Mapping cloverField="actorId" trim="true" xpath="actorId"/>
+    <Mapping cloverField="processId" trim="true" xpath="processId"/>
+    <Mapping cloverField="caseId" trim="true" xpath="caseId"/>
+    <Mapping cloverField="name" trim="true" xpath="name"/>
+    <Mapping cloverField="reached_state_date" trim="true" xpath="reached_x005fstate_x005fdate"/>
+    <Mapping cloverField="id" trim="true" xpath="id"/>
+    <Mapping cloverField="state" trim="true" xpath="state"/>
+    <Mapping cloverField="last_update_date" trim="true" xpath="last_x005fupdate_x005fdate"/>
+    <Mapping cloverField="assigned_id" trim="true" xpath="assigned_x005fid"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+<attr name="jsonSchemaURL"><![CDATA[.\src\test\resources\findTasksResp.json]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_ARRAY_NS0_TASK:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="03c93c8e-64ca-492b-845a-cd609c96ac36" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="bbe050ca-376b-47fe-9724-de28f7c57e8b" outPort="Port 0 (out)" toNode="FOREACH_ARRAY_NS0_TASK:0"/>
+</Phase>
+</Graph>
