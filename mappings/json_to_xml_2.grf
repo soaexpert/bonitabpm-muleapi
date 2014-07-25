@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Alexandre" created="Fri Jun 27 11:16:17 BRT 2014" description="JSON To XML" guiVersion="3.4.3.P" id="1403889141099" licenseCode="Unlicensed" licenseType="Unknown" modified="Fri Jun 27 11:16:17 BRT 2014" modifiedBy="Alexandre" name="JSON_To_XML_1JSON_To_XML_2" preview-file="${Project_Home}/src/test/resources/startProcessResp.json" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Input" id="913e76f5-3f80-4060-96e9-0d665815b0f7">
+<Record fieldDelimiter="," name="object" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" label="__id" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/end_x005fdate" containerType="SINGLE" label="end_date" name="end_date" type="string"/>
+<Field __index="1" __sourcePath="{}/object/processDefinitionId" containerType="SINGLE" label="processDefinitionId" name="processDefinitionId" type="string"/>
+<Field __index="2" __sourcePath="{}/object/start" containerType="SINGLE" label="start" name="start" type="string"/>
+<Field __index="3" __sourcePath="{}/object/rootCaseId" containerType="SINGLE" label="rootCaseId" name="rootCaseId" type="string"/>
+<Field __index="4" __sourcePath="{}/object/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="5" __sourcePath="{}/object/state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __index="6" __sourcePath="{}/object/started_x005fby" containerType="SINGLE" label="started_by" name="started_by" type="string"/>
+<Field __index="7" __sourcePath="{}/object/last_x005fupdate_x005fdate" containerType="SINGLE" label="last_update_date" name="last_update_date" type="string"/>
+<Field __index="8" __sourcePath="{}/object/startedBySubstitute" containerType="SINGLE" label="startedBySubstitute" name="startedBySubstitute" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:startProcessResponse" _dataStructure="OBJECT" _id="__id" _type="Output" id="42dbcb6a-484b-4409-8750-19c9b50ee727">
+<Record fieldDelimiter="," name="startProcessResponse" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __dmType="Calendar" __index="0" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:endDate" containerType="SINGLE" label="endDate" name="endDate" type="string"/>
+<Field __index="1" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:processDefinitionId" containerType="SINGLE" label="processDefinitionId" name="processDefinitionId" type="string"/>
+<Field __dmType="Calendar" __index="2" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:start" containerType="SINGLE" label="start" name="start" type="string"/>
+<Field __index="3" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:rootCaseId" containerType="SINGLE" label="rootCaseId" name="rootCaseId" type="string"/>
+<Field __index="4" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="5" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __index="6" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:startedBy" containerType="SINGLE" label="startedBy" name="startedBy" type="string"/>
+<Field __dmType="Calendar" __index="7" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:lastUpdateDate" containerType="SINGLE" label="lastUpdateDate" name="lastUpdateDate" type="string"/>
+<Field __index="8" __schemaType="{http://bip.b.br/process}ProcessInstance" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcessResponse/ns0:processResponse/ns1:startedBySubstitute" containerType="SINGLE" label="startedBySubstitute" name="startedBySubstitute" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="XML WRITER" guiX="900" guiY="20" id="EXT_XML_WRITER0" type="EXT_XML_WRITER" xmlSchemaURL=".\src\main\resources\ProcessManagement_1_0.xsd">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<clover:element clover:name="ns0:startProcessResponse" xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" xmlns:ns0="http://bip.b.br/process/services" clover:inPort="0">
+  <clover:element clover:name="ns0:processResponse">
+    <clover:element clover:name="ns1:endDate" xmlns:ns1="http://bip.b.br/process">$0.endDate</clover:element>
+    <clover:element clover:name="ns1:processDefinitionId" xmlns:ns1="http://bip.b.br/process">$0.processDefinitionId</clover:element>
+    <clover:element clover:name="ns1:start" xmlns:ns1="http://bip.b.br/process">$0.start</clover:element>
+    <clover:element clover:name="ns1:rootCaseId" xmlns:ns1="http://bip.b.br/process">$0.rootCaseId</clover:element>
+    <clover:element clover:name="ns1:id" xmlns:ns1="http://bip.b.br/process">$0.id</clover:element>
+    <clover:element clover:name="ns1:state" xmlns:ns1="http://bip.b.br/process">$0.state</clover:element>
+    <clover:element clover:name="ns1:startedBy" xmlns:ns1="http://bip.b.br/process">$0.startedBy</clover:element>
+    <clover:element clover:name="ns1:lastUpdateDate" xmlns:ns1="http://bip.b.br/process">$0.lastUpdateDate</clover:element>
+    <clover:element clover:name="ns1:startedBySubstitute" xmlns:ns1="http://bip.b.br/process">$0.startedBySubstitute</clover:element>
+  </clover:element>
+</clover:element>]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://bip.b.br/process/services}startProcessResponse]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'object' -&gt; 'ns0:startProcessResponse'" guiX="460" guiY="20" id="FOREACH_OBJECT_NS0_START_PROCESS_RESPONSE" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.processDefinitionId = input.processDefinitionId;
+output.start = (isnull(input.start) ? null : str2calendar(input.start,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.rootCaseId = input.rootCaseId;
+output.id = input.id;
+output.state = input.state + input.state;
+output.startedBySubstitute = input.startedBySubstitute;
+output.endDate = (isnull(input.end_date) ? null : str2calendar(input.end_date,"yyyy-MM-dd HH:mm:ss.SSS"));
+output.startedBy = input.started_by;
+output.lastUpdateDate = (isnull(input.last_update_date) ? null : str2calendar(input.last_update_date,"yyyy-MM-dd HH:mm:ss.SSS"));]]></attr>
+</Node>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="JSON READER" guiX="20" guiY="20" id="JSON_READER0" type="JSON_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context xpath="/root">
+  <Context outPort="0" sequenceField="__id" xpath="object">
+    <Mapping cloverField="end_date" trim="true" xpath="end_x005fdate"/>
+    <Mapping cloverField="processDefinitionId" trim="true" xpath="processDefinitionId"/>
+    <Mapping cloverField="start" trim="true" xpath="start"/>
+    <Mapping cloverField="rootCaseId" trim="true" xpath="rootCaseId"/>
+    <Mapping cloverField="id" trim="true" xpath="id"/>
+    <Mapping cloverField="state" trim="true" xpath="state"/>
+    <Mapping cloverField="started_by" trim="true" xpath="started_x005fby"/>
+    <Mapping cloverField="last_update_date" trim="true" xpath="last_x005fupdate_x005fdate"/>
+    <Mapping cloverField="startedBySubstitute" trim="true" xpath="startedBySubstitute"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+<attr name="jsonSchemaURL"><![CDATA[.\src\test\resources\startProcessResp.json]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_OBJECT_NS0_START_PROCESS_RESPONSE:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="42dbcb6a-484b-4409-8750-19c9b50ee727" outPort="Port 0 (out)" toNode="EXT_XML_WRITER0:0"/>
+<Edge debugMode="true" fromNode="JSON_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="913e76f5-3f80-4060-96e9-0d665815b0f7" outPort="Port 0 (out)" toNode="FOREACH_OBJECT_NS0_START_PROCESS_RESPONSE:0"/>
+</Phase>
+</Graph>

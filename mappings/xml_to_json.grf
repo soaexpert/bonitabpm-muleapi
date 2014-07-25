@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph __version="3.5.0" author="Alexandre" created="Fri Jun 27 11:16:17 BRT 2014" description="XML To JSON" guiVersion="3.4.3.P" id="1403888393731" licenseCode="Unlicensed" licenseType="Unknown" modified="Fri Jun 27 11:16:17 BRT 2014" modifiedBy="Alexandre" name="XML_To_JSON" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Output" id="1afe9f16-94f2-4be7-9f18-9a6362e8c565">
+<Record fieldDelimiter="," name="object" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" label="__id" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/processDefinitionId" containerType="SINGLE" label="processDefinitionId" name="processDefinitionId" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:startProcess" _dataStructure="OBJECT" _id="__id" _type="Input" id="1f54a097-2268-46e6-b661-5d975426cbf4">
+<Record fieldDelimiter="," name="startProcess" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:displayDescription" containerType="SINGLE" label="displayDescription" name="displayDescription" type="string"/>
+<Field __index="1" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:displayName" containerType="SINGLE" label="displayName" name="displayName" type="string"/>
+<Field __index="2" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:icon" containerType="SINGLE" label="icon" name="icon" type="string"/>
+<Field __index="3" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="4" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:deployedBy" containerType="SINGLE" label="deployedBy" name="deployedBy" type="string"/>
+<Field __index="5" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:activationState" containerType="SINGLE" label="activationState" name="activationState" type="string"/>
+<Field __index="6" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:version" containerType="SINGLE" label="version" name="version" type="string"/>
+<Field __dmType="Calendar" __index="7" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:deploymentDate" containerType="SINGLE" label="deploymentDate" name="deploymentDate" type="string"/>
+<Field __index="8" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="9" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="10" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:configurationState" containerType="SINGLE" label="configurationState" name="configurationState" type="string"/>
+<Field __dmType="Calendar" __index="11" __schemaType="{http://bip.b.br/process}ProcessDefinition" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:process/ns1:lastUpdateDate" containerType="SINGLE" label="lastUpdateDate" name="lastUpdateDate" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="12" __referenceCounter="1" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:variable" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="1f54a097-2268-46e6-b661-5d975426cbf4" _parent_id="__parent_id" _type="Input" id="7bfbea5b-e4f5-43a8-b3d5-d9906dd4c198">
+<Record fieldDelimiter="," name="variable" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="12" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:variable/ns1:name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="13" __schemaType="{http://bip.b.br/process}Variable" __sourcePath="{http://bip.b.br/process=ns1,http://bip.b.br/process/services=ns0}/ns0:startProcess/ns0:variable/ns1:value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="1" __referenceCounter="1" __sourcePath="{}/object/variables" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="1afe9f16-94f2-4be7-9f18-9a6362e8c565" _parent_id="__parent_id" _type="Output" id="36831a4e-0872-4e7a-bb85-1f811d451d12">
+<Record fieldDelimiter="," name="variables" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_parent_id" __systemManaged="true" label="__parent_id" name="__parent_id" type="string"/>
+<Field __artificialType="_id" __systemManaged="true" label="__id" name="__id" type="string"/>
+<Field __index="1" __sourcePath="{}/object/variables/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="2" __sourcePath="{}/object/variables/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" guiName="Foreach 'ns0:startProcess' -&gt; 'object'" guiX="460" guiY="20" id="FOREACH_NS0_START_PROCESS_OBJECT" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.processDefinitionId = input.id;]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'ns0:variable' -&gt; 'variables'" guiX="460" guiY="120" id="FOREACH_NS0_VARIABLE_VARIABLES" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+output.__parent_id = input.__parent_id;
+//END -> DO NOT REMOVE
+output.name = input.name;
+output.value = input.value;
+]]></attr>
+</Node>
+<Node cacheInMemory="true" charset="UTF-8" enabled="enabled" fileURL="dict:outputPayload" guiName="JSON WRITER" guiX="900" guiY="20" id="JSON_WRITER0" type="JSON_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<object xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <processDefinitionId>$0.processDefinitionId</processDefinitionId>
+  <clover:collection clover:name="variables">
+    <item clover:inPort="1" clover:key="__parent_id" clover:parentKey="__id">
+      <name>$1.name</name>
+      <value>$1.value</value>
+    </item>
+  </clover:collection>
+</object>]]></attr>
+<attr name="_data_format"><![CDATA[JSON]]></attr>
+<attr name="jsonSchemaURL"><![CDATA[.\src\test\resources\startProcess.json]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Duplicate variable" guiX="240" guiY="20" id="SIMPLE_COPY0" type="SIMPLE_COPY"/>
+<Node charset="UTF-8" enabled="enabled" fileURL="dict:inputPayload" guiName="XML READER" guiX="20" guiY="20" id="XML_READER0" type="XML_READER">
+<attr name="xmlSchemaURL"><![CDATA[.\src\main\resources\ProcessManagement_1_0.xsd]]></attr>
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context namespacePaths="ns0=&quot;http://bip.b.br/process/services&quot;" outPort="0" sequenceField="__id" xpath="/ns0:startProcess">
+  <Mapping cloverField="displayDescription" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:displayDescription"/>
+  <Mapping cloverField="displayName" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:displayName"/>
+  <Mapping cloverField="icon" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:icon"/>
+  <Mapping cloverField="description" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:description"/>
+  <Mapping cloverField="deployedBy" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:deployedBy"/>
+  <Mapping cloverField="activationState" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:activationState"/>
+  <Mapping cloverField="version" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:version"/>
+  <Mapping cloverField="deploymentDate" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:deploymentDate"/>
+  <Mapping cloverField="name" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:name"/>
+  <Mapping cloverField="id" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:id"/>
+  <Mapping cloverField="configurationState" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:configurationState"/>
+  <Mapping cloverField="lastUpdateDate" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;;ns0=&quot;http://bip.b.br/process/services&quot;" trim="true" xpath="ns0:process/ns1:lastUpdateDate"/>
+  <Context generatedKey="__parent_id" namespacePaths="ns0=&quot;http://bip.b.br/process/services&quot;" outPort="1" parentKey="__id" sequenceField="__id" xpath="ns0:variable">
+    <Mapping cloverField="name" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;" trim="true" xpath="ns1:name"/>
+    <Mapping cloverField="value" namespacePaths="ns1=&quot;http://bip.b.br/process&quot;" trim="true" xpath="ns1:value"/>
+  </Context>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[XML]]></attr>
+<attr name="__rootGlobalElementName"><![CDATA[{http://bip.b.br/process/services}startProcess]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="FOREACH_NS0_START_PROCESS_OBJECT:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="1afe9f16-94f2-4be7-9f18-9a6362e8c565" outPort="Port 0 (out)" toNode="JSON_WRITER0:0"/>
+<Edge debugMode="true" fromNode="FOREACH_NS0_VARIABLE_VARIABLES:0" guiBendpoints="" id="Edge3" inPort="Port 1 (in)" metadata="36831a4e-0872-4e7a-bb85-1f811d451d12" outPort="Port 0 (out)" toNode="JSON_WRITER0:1"/>
+<Edge debugMode="true" fromNode="SIMPLE_COPY0:0" guiBendpoints="" id="Edge2" inPort="Port 0 (in)" metadata="7bfbea5b-e4f5-43a8-b3d5-d9906dd4c198" outPort="Port 0 (out)" toNode="FOREACH_NS0_VARIABLE_VARIABLES:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="1f54a097-2268-46e6-b661-5d975426cbf4" outPort="Port 0 (out)" toNode="FOREACH_NS0_START_PROCESS_OBJECT:0"/>
+<Edge debugMode="true" fromNode="XML_READER0:1" guiBendpoints="" id="Edge4" inPort="Port 0 (in)" metadata="7bfbea5b-e4f5-43a8-b3d5-d9906dd4c198" outPort="Port 1 (out)" toNode="SIMPLE_COPY0:0"/>
+</Phase>
+</Graph>

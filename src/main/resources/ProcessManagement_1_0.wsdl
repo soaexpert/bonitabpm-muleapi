@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:tns="http://bip.b.br/process/services"
+	xmlns:proc="http://bip.b.br/process"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	name="ProcessManagement_1_0"
+	targetNamespace="http://bip.b.br/process/services">
+	<wsdl:types>
+		<xsd:schema
+			targetNamespace="http://bip.b.br/process/services"
+			elementFormDefault="qualified">
+			<xsd:include schemaLocation="ProcessManagement_1_0.xsd" />
+		</xsd:schema>
+
+	</wsdl:types>
+	<wsdl:message name="startProcessRequest">
+		<wsdl:part
+			element="tns:startProcess"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startProcessResponse">
+		<wsdl:part
+			element="tns:startProcessResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="findTasksRequest">
+		<wsdl:part
+			element="tns:findTasks"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="findTasksResponse">
+		<wsdl:part
+			element="tns:findTasksResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startTaskRequest">
+		<wsdl:part
+			element="tns:startTask"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="startTaskResponse">
+		<wsdl:part
+			element="tns:startTaskResponse"
+			name="parameters" />
+	</wsdl:message>
+	<wsdl:message name="completeTaskRequest">
+		<wsdl:part
+			element="tns:completeTask"
+			name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="completeTaskResponse">
+		<wsdl:part
+			element="tns:completeTaskResponse"
+			name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="listProcessDefinitionsRequest">
+		<wsdl:part
+			element="tns:listProcessDefinitions"
+			name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="listProcessDefinitionsResponse">
+		<wsdl:part
+			element="tns:listProcessDefinitionsResponse"
+			name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="findUsersRequest">
+		<wsdl:part
+			element="tns:findUsers"
+			name="parameters"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="findUsersResponse">
+		<wsdl:part
+			element="tns:findUsersResponse"
+			name="parameters">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="findProcessInstancesRequest">
+		<wsdl:part
+			name="parameters"
+			element="tns:findProcessInstances">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="findProcessInstancesResponse">
+		<wsdl:part
+			name="parameters"
+			element="tns:findProcessInstancesResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="listVariablesRequest">
+		<wsdl:part
+			name="parameters"
+			element="tns:listVariables">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="listVariablesResponse">
+		<wsdl:part
+			name="parameters"
+			element="tns:listVariablesResponse">
+		</wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="ProcessManagement_1_0">
+		<wsdl:operation name="startProcess">
+			<wsdl:input message="tns:startProcessRequest" />
+			<wsdl:output message="tns:startProcessResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="findTasks">
+			<wsdl:input message="tns:findTasksRequest" />
+			<wsdl:output message="tns:findTasksResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="startTask">
+			<wsdl:input message="tns:startTaskRequest" />
+			<wsdl:output message="tns:startTaskResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="completeTask">
+			<wsdl:input message="tns:completeTaskRequest" />
+			<wsdl:output message="tns:completeTaskResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="listProcessDefinitions">
+			<wsdl:input message="tns:listProcessDefinitionsRequest" />
+			<wsdl:output message="tns:listProcessDefinitionsResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="findUsers">
+			<wsdl:input message="tns:findUsersRequest" />
+			<wsdl:output message="tns:findUsersResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="findProcessInstances">
+			<wsdl:input message="tns:findProcessInstancesRequest" />
+			<wsdl:output message="tns:findProcessInstancesResponse" />
+		</wsdl:operation>
+		<wsdl:operation name="listVariables">
+			<wsdl:input message="tns:listVariablesRequest" />
+			<wsdl:output message="tns:listVariablesResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding
+		name="ProcessManagement_1_0SOAP"
+		type="tns:ProcessManagement_1_0">
+		<soap:binding
+			style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="startProcess">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="findTasks">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="startTask">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="completeTask">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="listProcessDefinitions">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="findUsers">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="findProcessInstances">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="listVariables">
+			<soap:operation soapAction="" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="ProcessManagement_1_0">
+		<wsdl:port
+			binding="tns:ProcessManagement_1_0SOAP"
+			name="ProcessManagement_1_0SOAP">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

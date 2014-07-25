@@ -1,0 +1,13 @@
+[
+    {
+        "end_date": "",
+        "processDefinitionId": "8742081379907518382",
+        "start": "2014-06-27 18:28:04.772",
+        "rootCaseId": "1008",
+        "id": "1008",
+        "state": "started",
+        "started_by": "104",
+        "last_update_date": "2014-06-27 18:28:04.772",
+        "startedBySubstitute": "104"
+    }
+]
